@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://dcw1rfa2vlu2y"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_evlww"]
+
+[resource]
+script = ExtResource("1_evlww")
+starts = {
+"introduction": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-600, 0),
+"start_id": "introduction"
+},
+"1_1": {
+"dialogue": "An AB called the bridge that they saw smoke on the aft end of bay 21.
+Can you assess the situation?
+I will sound the general alarm and muster the crew.
+Wind is North with 10 kn
+Course 010°",
+"offset": Vector2(-360, -100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Good. Thank you. Will investigate and let you know"
+}
+},
+"size": Vector2(300, 307),
+"speaker": "Watch officer"
+},
+"1_2": {
+"dialogue": "Okay. Good luck.",
+"offset": Vector2(80, -100),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "And call the Master immediately!"
+}
+},
+"size": Vector2(300, 276),
+"speaker": "Watch officer"
+},
+"1_3": {
+"dialogue": "Anlready happened.",
+"offset": Vector2(500, -60),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Good. Thank you."
+}
+},
+"size": Vector2(300, 276),
+"speaker": "Watch officer"
+}
+}
+variables = {}
+comments = Array[String]([])
+strays = Array[String]([])
+characters = "Watch officer"

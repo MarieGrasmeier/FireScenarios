@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0f3nr7x1l0lw"]
+
+[ext_resource type="Script" path="res://360_Check.gd" id="1_i2njb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n6iy4"]
+
+[node name="360_Check" type="Node"]
+script = ExtResource("1_i2njb")
+
+[node name="Checkpoint" type="Area3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -28.3366, 4.81598, -10.722)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoint"]
+shape = SubResource("BoxShape3D_n6iy4")
+
+[node name="Checkpoint2" type="Area3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -18.7353, 4.81598, -10.722)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoint2"]
+shape = SubResource("BoxShape3D_n6iy4")
+
+[node name="Checkpoint3" type="Area3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.12576, 7.36882, -3.35702)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoint3"]
+shape = SubResource("BoxShape3D_n6iy4")
+
+[node name="Checkpoint4" type="Area3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -18.6337, 5.24222, 9.84457)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoint4"]
+shape = SubResource("BoxShape3D_n6iy4")
+
+[node name="Checkpoint5" type="Area3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -22.4491, 5.24222, -0.976113)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoint5"]
+shape = SubResource("BoxShape3D_n6iy4")
+
+[connection signal="body_entered" from="Checkpoint" to="." method="_on_checkpoint_body_entered"]
+[connection signal="body_entered" from="Checkpoint2" to="." method="_on_checkpoint_2_body_entered"]
+[connection signal="body_entered" from="Checkpoint3" to="." method="_on_checkpoint_3_body_entered"]
+[connection signal="body_entered" from="Checkpoint4" to="." method="_on_checkpoint_4_body_entered"]
+[connection signal="body_entered" from="Checkpoint5" to="." method="_on_checkpoint_5_body_entered"]

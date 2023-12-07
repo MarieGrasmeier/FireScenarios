@@ -1,0 +1,306 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://clnn1xuon0c2q"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_rb736"]
+
+[resource]
+script = ExtResource("1_rb736")
+starts = {
+"Decision": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-200, -140),
+"start_id": "Decision"
+},
+"1_1": {
+"dialogue": "Now that you completed the assessment, it is time to evaluate and take a decision.
+Let's go!",
+"offset": Vector2(120, -500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Okay, let's go"
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_10": {
+"dialogue": "That would work. 
+However, it would expose the defence team to a high risk.
+Think about a better way to approach it.",
+"offset": Vector2(1620.37, 68.2329),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_11": {
+"dialogue": "No. 
+There was no hint in this direction in the EmS.",
+"offset": Vector2(2420, -160),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_12": {
+"dialogue": "Following official recommendations is important.
+However, there is also the obligation to consider if you can do more.
+Moreover, if you checked the EmS thoroughly, you woul have found that it is not up to date.",
+"offset": Vector2(2440, -500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_13": {
+"dialogue": "That is correct. Since the cargo is stowed in a cargo trasport unit on deck, this is what EmS recommends.",
+"offset": Vector2(1260, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": "Cool!"
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_14": {
+"dialogue": "Where did you find any information about foam?",
+"offset": Vector2(2020, -1200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": "Uh, don't know?"
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_2": {
+"dialogue": "What is the cargo inside the burning container?",
+"offset": Vector2(500, -240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "Adhesives"
+},
+1: {
+"condition": {},
+"link": &"1_7",
+"text": "Acid"
+},
+2: {
+"condition": {},
+"link": &"1_7",
+"text": "Garments"
+},
+3: {
+"condition": {},
+"link": &"1_7",
+"text": "Petrol"
+}
+},
+"size": {
+"x": 300.0,
+"y": 369.0
+},
+"speaker": ""
+},
+"1_3": {
+"dialogue": "What procedure is recommended in the official documentation to fight the fire of this cargo?",
+"offset": Vector2(908.336, -226.359),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": "Use cargo space fixed fire-extinguishing system."
+},
+1: {
+"condition": {},
+"link": &"1_6",
+"text": "Create water spray from as many hoses as possible."
+},
+2: {
+"condition": {},
+"link": &"1_13",
+"text": "Cool burning transport units and nearby cargo exposed to the fire with copiousquantities of water."
+}
+},
+"size": {
+"x": 300.0,
+"y": 338.0
+},
+"speaker": ""
+},
+"1_4": {
+"dialogue": "How would you proceed now?",
+"offset": Vector2(980, -1280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": "I would follow the recommendation and send two teams with nozzles to cool the containers to prevent fire spread."
+},
+1: {
+"condition": {},
+"link": &"1_9",
+"text": "I would send a team with a nozzle prevent spread. At the same time, I would order the defence team to don SCBAs and then attack the fire with a penetration nozzle."
+},
+2: {
+"condition": {},
+"link": &"1_10",
+"text": "I will order the defence team to don SCBAs and then send them with an angle grinder and a water nozzle to open the container and perform an interior attack."
+},
+3: {
+"condition": {},
+"link": &"1_14",
+"text": "I would send the defence unit to attack the fire with foam to prevent spread. Then the hose team will back-up with a water nozzle"
+}
+},
+"size": {
+"x": 918.811,
+"y": 632.643
+},
+"speaker": ""
+},
+"1_5": {
+"dialogue": "No. You found the right page but what you suggests is the procedure for cargo stowed under deck.
+Please try again.",
+"offset": Vector2(983.719, 221.398),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_6": {
+"dialogue": "No. That is the procedure for Packages on deck. Since our cargo is in a container, the procedure for cargo transport units applies.
+Please try again.",
+"offset": Vector2(1320, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_7": {
+"dialogue": "No, not quite right.
+Please check the UN Number again.",
+"offset": Vector2(440.668, 159.992),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+},
+"1_8": {
+"dialogue": "Yes, that is a way to first approach it.
+However, what problems do you see with that approach?",
+"offset": Vector2(2040, -460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_11",
+"text": "The cargo inside the container might react with water in a dangerous way."
+},
+1: {
+"condition": {},
+"link": &"1_9",
+"text": "I can only reach the containers from the aft end of the bay. Cooling will not prevent fire propagation to the other sides and will therefore not be sufficient. In addition, I will attack the fire with a penetration nozzle."
+},
+2: {
+"condition": {},
+"link": &"1_12",
+"text": "No problem. If EmS says soours.Contaminated clothing must b, it must be correct."
+}
+},
+"size": {
+"x": 300.0,
+"y": 338.0
+},
+"speaker": ""
+},
+"1_9": {
+"dialogue": "Yes, very good decision.
+While cooling the adjacent containers can be a first line of defence, it will probably not be sufficient to knock down the fire.
+Using a penetration nozzle is a good way to attack the seat of the fire without taking too much risk for the fire fighters.",
+"offset": Vector2(1980, -60),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": {
+"x": 300.0,
+"y": 276.0
+},
+"speaker": ""
+}
+}
+variables = {}
+comments = Array[String]([])
+strays = Array[String]([])
+characters = ""

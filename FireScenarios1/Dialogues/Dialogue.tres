@@ -1,0 +1,159 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://cvobvtw2be677"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_aj02i"]
+
+[resource]
+script = ExtResource("1_aj02i")
+starts = {
+"Question01": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_6",
+"offset": Vector2(-520, -120),
+"start_id": "Question01"
+},
+"1_1": {
+"dialogue": "Yes, correct.
+Where can you find information on the cargo inside the Container. ",
+"offset": Vector2(200, -180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "FSS Code"
+},
+1: {
+"condition": {},
+"link": &"1_3",
+"text": "SOLAS"
+},
+2: {
+"condition": {},
+"link": &"1_2",
+"text": "IMDG Code"
+},
+3: {
+"condition": {},
+"link": &"1_3",
+"text": ""
+}
+},
+"size": Vector2(300, 369),
+"speaker": ""
+},
+"1_2": {
+"dialogue": "That is correct. The IMDG code contains a list with all dangerous goods sorted by their UN Number.
+By checking the list, you can find out exactly what is inside and reference to further insormation.",
+"offset": Vector2(560, -280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": Vector2(496.955, 453.628),
+"speaker": ""
+},
+"1_3": {
+"dialogue": "No, that will not help. Try again.",
+"offset": Vector2(400, 380),
+"options": {
+0: {
+"condition": {},
+"link": &"1_1",
+"text": ""
+}
+},
+"size": Vector2(300, 276),
+"speaker": ""
+},
+"1_4": {
+"dialogue": "Where do you find recommended fire fighting procedures for this cargo?",
+"offset": Vector2(1041.24, -148.498),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "IMDG Code"
+},
+1: {
+"condition": {},
+"link": &"1_3",
+"text": "FSS Code"
+},
+2: {
+"condition": {},
+"link": &"1_3",
+"text": "Fire Control and Safety Plan"
+},
+3: {
+"condition": {},
+"link": &"1_5",
+"text": "EmS"
+}
+},
+"size": Vector2(300, 369),
+"speaker": ""
+},
+"1_5": {
+"dialogue": "That is correct. Now, have a look and see what is burning and how to respond
+Good luck",
+"offset": Vector2(1520, -180),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 276),
+"speaker": ""
+},
+"1_6": {
+"dialogue": "What is the UN No and class of the cargo inside the container?",
+"offset": Vector2(-280, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": "There is no dangerous cargo inside"
+},
+1: {
+"condition": {},
+"link": &"1_1",
+"text": "Class 3, UN 1133"
+},
+2: {
+"condition": {},
+"link": &"1_7",
+"text": "Class 1133, UN 3"
+},
+3: {
+"condition": {},
+"link": &"1_7",
+"text": "You cannot see it on the container"
+}
+},
+"size": Vector2(300, 369),
+"speaker": ""
+},
+"1_7": {
+"dialogue": "No, that was wrong. Try again.",
+"offset": Vector2(-340, 340),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": ""
+}
+},
+"size": Vector2(300, 276),
+"speaker": ""
+}
+}
+variables = {}
+comments = Array[String]([])
+strays = Array[String]([])
+characters = ""

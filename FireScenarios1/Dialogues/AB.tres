@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://b1bkrfnqec8q1"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_cwhoc"]
+
+[resource]
+script = ExtResource("1_cwhoc")
+starts = {
+"AB": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-380, 60),
+"start_id": "AB"
+},
+"1_1": {
+"dialogue": "I went painting on deck when I noticed this burnt, chemical smell. 
+I went to see what had happened. 
+Then I saw all this smoke!",
+"offset": Vector2(-20, -60),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Thank you. Are you okay?"
+},
+1: {
+"condition": {},
+"link": &"1_4",
+"text": "Thank you. Please go to the muster station now and wait for orders"
+},
+2: {
+"condition": {},
+"link": &"1_5",
+"text": "Thank you. Please grab a hose and fight the fire now"
+}
+},
+"size": Vector2(385.668, 414.338),
+"speaker": "AB"
+},
+"1_2": {
+"dialogue": "Yes, I am fine. Just a bit distubed",
+"offset": Vector2(560, 240),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "Did you inhale any smoke?"
+},
+1: {
+"condition": {},
+"link": &"1_4",
+"text": "Okay then. Go to the muster station now and wait for instructions."
+}
+},
+"size": Vector2(300, 307),
+"speaker": ""
+},
+"1_3": {
+"dialogue": "No, I stayed at a distance. I am fine.",
+"offset": Vector2(1240, 0),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": "Okay then. Get a hose and fight the fire!"
+},
+1: {
+"condition": {},
+"link": &"1_6",
+"text": "Okay, glad to hear. Go to the muster station now and wait for instructions."
+}
+},
+"size": Vector2(300, 307),
+"speaker": "AB"
+},
+"1_4": {
+"dialogue": "It is correct to send them to the muster station.
+However, you should have asked if they had inhaled any smoke.",
+"offset": Vector2(960, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Dialogue"
+}
+},
+"size": Vector2(300.001, 276),
+"speaker": "Mayday Academy"
+},
+"1_5": {
+"dialogue": "Crew members must wear proper fire fighting PPE to execute fire fighting operations.
+Moreover, never attack a fire alone. 
+Teams must consits of at least 2 memvers.",
+"offset": Vector2(580, -620),
+"options": {
+0: {
+"condition": {},
+"link": &"1_1",
+"text": ""
+}
+},
+"size": Vector2(300, 276),
+"speaker": "Mayday Academy"
+},
+"1_6": {
+"dialogue": "That was very good. All crew must muster and don adequate PPE before starting fire fighting.",
+"offset": Vector2(1639.61, 229.534),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Continue"
+}
+},
+"size": Vector2(300, 276),
+"speaker": "Mayday Academy"
+}
+}
+variables = {}
+comments = Array[String]([])
+strays = Array[String]([])
+characters = ""

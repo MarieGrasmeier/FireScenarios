@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cqvwjfsag1dk"]
+
+[ext_resource type="Texture2D" uid="uid://75noj37ixr0" path="res://Assets/Models/textures/old_lightskinned_female_diffuse2.png" id="1_qjmil"]
+
+[resource]
+albedo_texture = ExtResource("1_qjmil")

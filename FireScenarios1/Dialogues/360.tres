@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://iwrdufgjcpgq"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_lnvgg"]
+
+[resource]
+script = ExtResource("1_lnvgg")
+starts = {
+"360": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-110, -90),
+"start_id": "360"
+},
+"1_1": {
+"dialogue": "Very good. You completed the 360° survey.
+Now, you are familiar with the situation all around the fire site.",
+"offset": Vector2(160, -160),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 276),
+"speaker": ""
+}
+}
+variables = {}
+comments = Array[String]([])
+strays = Array[String]([])
+characters = ""
